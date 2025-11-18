@@ -1,0 +1,125 @@
+/* ------------ 리셋 ------------ */
+@import "reset.css";
+
+/* ------------ font ------------ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    background: #000;
+}
+#wrap {
+}
+main {
+}
+section {
+    padding: 0 6rem;
+}
+#header {
+    padding: 6rem;
+}
+#header .container {
+    justify-items: center;
+    text-align: center;
+}
+.main_tit {
+}
+.main_tit h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -0.025em;
+    margin: 0 0 2rem;
+    line-height: 1;
+    color: #fff;
+}
+.filter_list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.filter_list li {
+    display: flex;
+    padding: 0 0.85em !important;
+    height: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #7c7c7c;
+    min-width: 2rem;
+    transition: all 0.2s ease;
+}
+.filter_list li:hover {
+    color: #fff;
+}
+.filter_list li.active {
+    background: #1e1e20;
+    color: #fff;
+    border-color: transparent !important;
+}
+#project {
+    padding-bottom: 15rem;
+}
+.project_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+.project_item {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #161616;
+    border: 1px solid #35353a6b;
+}
+.project_item .img_area {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 800 / 600;
+    cursor: pointer;
+}
+.project_item .img_area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    transform: scale(1.001);
+}
+.project_item:hover .img_area img {
+    transform: scale(1.05);
+}
+.project_item .txt_area {
+}
+.project_item .txt_area .sub_tit {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    padding: 0.75rem 0.75rem 1.5rem 0.75rem;
+    transition: color 0.2s ease;
+    color: #7c7c7c;
+}
+.project_item:hover .txt_area .sub_tit {
+    color: #fff;
+}
+.tag_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    padding: 0 0.5rem 0.75rem;
+}
+.tag_list li {
+    background-color: #232325;
+    color: #aaa;
+    padding: 0.25rem 0.625rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
