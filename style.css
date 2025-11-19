@@ -94,8 +94,6 @@ section {
 .project_item:hover .img_area img {
     transform: scale(1.05);
 }
-.project_item .txt_area {
-}
 .project_item .txt_area .sub_tit {
     display: flex;
     gap: 0.25rem;
@@ -122,4 +120,54 @@ section {
     font-weight: 500;
     text-decoration: none;
     transition: background-color 0.2s ease;
+}
+#btn_top {
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    pointer-events: none;
+    display: inline-grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #eeeeeea8;
+    color: #212121;
+    box-shadow: 0 0 0 1px #ffffff14, 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 220ms ease, transform 220ms ease, box-shadow 150ms ease;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+}
+#btn_top span {
+    font-size: 24px;
+    line-height: 1;
+}
+#btn_top.show {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+#project_toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 0.85em !important;
+    height: 2em;
+    border-radius: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s ease;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 0 1px #ffffff14, 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+#project_toast.show {
+    opacity: 1;
 }
