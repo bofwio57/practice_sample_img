@@ -8,11 +8,7 @@ body {
     font-family: "Roboto", "Noto Sans KR", sans-serif;
     overflow-x: hidden;
     font-size: 16px;
-    background: #000;
-}
-#wrap {
-}
-main {
+    background: #111;
 }
 section {
     padding: 0 6rem;
@@ -23,8 +19,6 @@ section {
 #header .container {
     justify-items: center;
     text-align: center;
-}
-.main_tit {
 }
 .main_tit h1 {
     font-family: "Montserrat", sans-serif;
@@ -46,7 +40,7 @@ section {
     display: flex;
     padding: 0 0.85em !important;
     height: 2em;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #ffffff1a;
     border-radius: 3rem;
     justify-content: center;
     align-items: center;
@@ -61,7 +55,6 @@ section {
 .filter_list li.active {
     background: #1e1e20;
     color: #fff;
-    border-color: transparent !important;
 }
 #project {
     padding-bottom: 15rem;
@@ -75,7 +68,7 @@ section {
     border-radius: 10px;
     overflow: hidden;
     background-color: #161616;
-    border: 1px solid #35353a6b;
+    border: 1px solid #ffffff1a;
 }
 .project_item .img_area {
     overflow: hidden;
@@ -170,4 +163,30 @@ section {
 }
 #project_toast.show {
     opacity: 1;
+}
+
+/* ------------ 미디어쿼리 ------------ */
+@media (max-width: 991px) {
+    #header {
+        padding: 5rem 3rem;
+    }
+    #project {
+        padding-bottom: 10rem;
+    }
+    section {
+        padding: 0 3rem;
+    }
+}
+@media (max-width: 767px) {
+    .main_tit h1 {
+        font-size: 51px;
+    }
+    .project_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    .project_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
