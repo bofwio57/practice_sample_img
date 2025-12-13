@@ -6,11 +6,14 @@
         <title>practice_sample_list</title>
         <link rel="stylesheet" href="style.css" />
         <!-- Google Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
-    <body>
+    <body class="on">
         <div id="wrap">
             <main>
                 <section id="header">
@@ -55,13 +58,49 @@
                 </section>
                 <section id="project">
                     <div class="container">
-                        <div class="project_items"></div>
+                        <div class="modal_area" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+                            <div class="popup_card">
+                                <header class="card_head">
+                                    <h2 id="popupTitle">NEW PROJECT</h2>
+                                </header>
+
+                                <section class="card_body">
+                                    <div class="form_area">
+                                        <div class="form_row">
+                                            <label class="txt_label" for="titleInput">제목</label>
+                                            <input id="titleInput" type="text" placeholder="프로젝트 제목을 입력하세요" />
+                                        </div>
+                                        <div class="form_row">
+                                            <label class="txt_label" for="tagInput">태그</label>
+                                            <input id="tagInput" type="text" placeholder="'Enter'로 태그 추가 — 예: react" aria-label="태그 추가" />
+                                        </div>
+                                        <div class="form_row">
+                                            <label class="file_label" for="fileInput">이미지 첨부</label>
+                                            <input type="file" id="fileInput" />
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <footer class="card_foot">
+                                    <button class="btn btn_ghost" id="btn_cancel">취소</button>
+                                    <button class="btn btn_primary" id="btn_add">추가</button>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="project_items">
+                            <div class="project_add">
+                                <div class="txt_box">
+                                    <span class="material-symbols-outlined"> add </span>
+                                    <p>NEW PROJECT</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
         </div>
         <div id="btn_top" aria-label="페이지 상단으로 이동">
-            <span class="material-icons" aria-hidden="true">arrow_upward</span>
+            <span class="material-symbols-outlined"> arrow_upward </span>
         </div>
         <div id="project_toast"></div>
         <!-- lenis-->
