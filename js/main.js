@@ -18,6 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 <ul class="tag_list">
                     ${tagList}
                 </ul>
+                <div class="btn_area">
+                    <button class="btn btn_icon btn_ghost">
+                        <span class="material-symbols-outlined"> edit</span>
+                        수정
+                    </button>
+                    <button class="btn btn_icon btn_ghost" id="btn_copy">
+                        <span class="material-symbols-outlined"> content_copy </span>
+                        복사
+                    </button>
+                </div>
             </div>
         `;
 

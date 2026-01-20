@@ -98,6 +98,22 @@ section {
 .project_item:hover .txt_area .sub_tit {
     color: #fff;
 }
+.project_item .btn_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff1a;
+    padding: 10px;
+    gap: 20px;
+}
+.btn_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
 .tag_list {
     display: flex;
     flex-wrap: wrap;
@@ -155,13 +171,18 @@ section {
     display: inline-grid;
     place-items: center;
     opacity: 0;
-    transition: opacity 220ms ease, transform 220ms ease, box-shadow 150ms ease;
+    transition:
+        opacity 220ms ease,
+        transform 220ms ease,
+        box-shadow 150ms ease;
     z-index: 9999;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: #eeeeeea8;
     color: #212121;
-    box-shadow: 0 0 0 1px #ffffff14, 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow:
+        0 0 0 1px #ffffff14,
+        0px 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 #btn_top span {
     font-size: 24px;
@@ -188,7 +209,9 @@ section {
     z-index: 9999;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 0 1px #ffffff14, 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow:
+        0 0 0 1px #ffffff14,
+        0px 4px 8px 0 rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
 }
 #project_toast.show {
@@ -236,7 +259,9 @@ section {
     border-radius: 10px;
     background-color: #161616;
     border: 1px solid #ffffff1a;
-    box-shadow: 0 0 0 1px #ffffff14, 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow:
+        0 0 0 1px #ffffff14,
+        0px 4px 8px 0 rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 header.card_head {
